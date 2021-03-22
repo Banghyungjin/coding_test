@@ -22,6 +22,7 @@ public class Main {
         }
         return answer.toString();
     }
+
     public static void main(String[] args) {
 	    String s = "Zbcdefg";
 	    if (solution(s).equals("gfedcbZ")) {
