@@ -24,13 +24,6 @@ def infect(input_node: Node):                                   # 이어진 노�
             infect(i)                                           # 이어진 Node로 이동해서 체크
 
 
-def is_done(input_list):                                        # Node 리스트가 전부 체크되었는지 확인
-    for i in input_list:                                        # Node 리스트 순회
-        if i.get_name() != -1:                                  # Node 이름이 -1 이 아니면
-            return False                                        # 바로 거짓 반환
-    return True                                                 # 전부 -1 이면 참 반환
-
-
 num_of_nodes, links = map(int, sys.stdin.readline().split())    # Node 개수와 연결 개수 읽어옴
 answer = 0                                                      # 정답
 nodes = [Node(x) for x in range(1, num_of_nodes + 1)]           # Node로 이루어진 리스트 생성
@@ -45,6 +38,4 @@ for i in nodes:                                                 # Node 리스트
         answer += 1                                             # 정답 증가
         infect(i)                                               # 체크 시작
 
-
 print(answer)                                                   # 정답 출력
-
