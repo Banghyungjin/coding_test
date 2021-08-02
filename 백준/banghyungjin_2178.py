@@ -8,7 +8,7 @@ class Node:                                                                     
     connection = []                                                                 # 이 노드와 이어진 노드 리스트
     depth: int                                                                      # 시작 노드에서 해당 노드까지의 거리
 
-    def __init__(self, name, now_coord):                                # 생성자
+    def __init__(self, name, now_coord):                                            # 생성자
         self.name = name                                                            # -
         self.connection = []                                                        # -
         self.coord = now_coord                                                      # -
