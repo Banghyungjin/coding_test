@@ -37,7 +37,6 @@ people = [Person(x) for x in range(1, n + 1)]                       # 사람 리
 start, end = map(int, sys.stdin.readline().split())                 # 촌수를 찾을 두 명 읽어옴
 m = int(sys.stdin.readline().split()[0])                            # 사람 관계 수
 
-
 for i in range(m):                                                  # 관계 수 만큼
     parent, child = map(int, sys.stdin.readline().split())          # 부모, 자식 관계 읽어옴
     people[parent - 1].add_child(people[child - 1])                 # 부모에게 자식을 추가
