@@ -1,5 +1,6 @@
 import sys
 from collections import deque
+# 백준에서 pypy3 써야지 됨
 
 
 class Node:                                                                         # 각 노드를 나타내는 클래스
